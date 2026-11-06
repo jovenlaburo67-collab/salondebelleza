@@ -3,15 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Salón de Belleza Norma | Estilo clásico, mirada moderna</title>
-<meta name="description" content="Cortes, color, peinados de gala, maquillaje, pestañas, uñas y tratamientos. Arma tu pedido y envíalo por WhatsApp.">
-<meta name="theme-color" content="#fbe3ea">
+<title>Salón de Belleza y Peluquería Unisex Norma | Estilo clásico, mirada moderna</title>
+<meta name="description" content="Peluquería y salón de belleza unisex: cortes, color, peinados de gala y más. Elige tus servicios y consulta a Norma por WhatsApp.">
+<meta name="theme-color" content="#f472b6">
 
 <!-- Vista previa al compartir el enlace por WhatsApp -->
 <meta property="og:type" content="website">
 <meta property="og:locale" content="es_BO">
-<meta property="og:site_name" content="Salón de Belleza Norma">
-<meta property="og:title" content="Salón de Belleza Norma">
+<meta property="og:site_name" content="Salón de Belleza y Peluquería Unisex Norma">
+<meta property="og:title" content="Salón de Belleza y Peluquería Unisex Norma">
 <meta property="og:description" content="Cortes, color, peinados de gala, maquillaje y más. ¡Pide tu turno!">
 <meta property="og:image" content="https://salondebelleza-6vb.pages.dev/imgsalonbelleza/banner.jpg?v=7">
 <meta property="og:image:secure_url" content="https://salondebelleza-6vb.pages.dev/imgsalonbelleza/banner.jpg?v=7">
@@ -28,7 +28,7 @@
 <style>
 :root{
   --crema:#fff8f1; --fresa:#f9d9e0; --fresa2:#fdeef1; --durazno:#fde5d3; --lila:#efe4f5;
-  --celeste:#dcecf7; --piel:#fbe8d8; --malva:#7a3b57; --malva2:#a35d7d; --texto:#4a2f3a;
+  --celeste:#dcecf7; --piel:#fbe8d8; --malva:#5c1f42; --malva2:#8a3a66; --fondo:#f472b6; --fondo2:#f68fc6; --fondo3:#f9a8d2; --texto:#4a2f3a;
   --rosa:#d9908f; --oro:#d4a58f; --verde:#1fa855; --verde2:#168a45;
   --serif:'Cormorant Garamond',Georgia,serif; --sans:'Jost',system-ui,sans-serif;
 }
@@ -66,7 +66,7 @@ nav ul a{text-decoration:none}nav ul a:hover{color:var(--rosa)}
 .hero-bg{position:absolute;inset:-40px;background-size:cover;background-position:center;filter:blur(30px) saturate(1.1);transform:scale(1.08);opacity:.28}
 .hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(255,248,241,.92) 0%,rgba(253,232,236,.7) 55%,rgba(255,244,234,.35) 100%)}
 .hero .wrap{position:relative;z-index:1;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:44px;align-items:center;width:100%}
-.hero h1{font-size:clamp(2.7rem,5.6vw,4.8rem);font-style:italic;color:var(--malva)}
+.hero h1{font-size:clamp(2.2rem,4.6vw,3.8rem);font-style:italic;color:var(--malva)}
 .hero p.lead{font-size:1.3rem;margin:20px 0 22px;max-width:28ch;color:var(--texto)}
 .iconos{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:26px}
 .iconos span{background:#fff;border:2px solid var(--fresa);border-radius:999px;padding:8px 16px;font-weight:600;color:var(--malva);font-size:1rem}
@@ -159,6 +159,38 @@ textarea:focus,input:focus{border-color:var(--verde);outline:0}
 #bandeja{position:fixed;left:16px;bottom:22px;z-index:60;background:var(--malva);color:#fff;text-decoration:none;padding:15px 22px;border-radius:999px;font-weight:600;box-shadow:0 12px 30px rgba(0,0,0,.3);border:2px solid #fff}
 #bandeja[hidden],#bandeja.oculta{display:none}
 
+/* Consulta con fotos */
+#servicios{background:linear-gradient(180deg,var(--crema),var(--fresa2) 45%,var(--durazno))}
+.como{background:#fff;border:3px solid var(--fresa);border-radius:24px;padding:26px 20px;margin:0 auto 30px;max-width:760px;text-align:center}
+.como h3{font-size:2rem;color:var(--malva);margin-bottom:16px}
+.pasos{list-style:none;padding:0;text-align:left;display:grid;gap:12px;margin:0 auto 18px}
+.pasos li{display:flex;gap:14px;align-items:center;background:var(--fresa2);border-radius:18px;padding:12px 14px;font-size:1.1rem}
+.num{flex:none;width:42px;height:42px;border-radius:50%;background:var(--malva);color:#fff;display:grid;place-items:center;font-weight:700;font-size:1.3rem}
+.vd{color:var(--verde2)}
+.ops{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;max-width:900px;margin:0 auto 36px}
+@media(min-width:800px){.ops{grid-template-columns:repeat(4,1fr)}}
+.op{position:relative;font:inherit;padding:0;border:4px solid var(--fresa);border-radius:22px;background:#fff;cursor:pointer;box-shadow:0 10px 24px rgba(122,59,87,.12);transition:transform .15s,border-color .15s;display:flex;flex-direction:column;text-align:center;color:inherit}
+.op:active{transform:scale(.96)}
+.op img{width:100%;height:auto;aspect-ratio:3/2;object-fit:cover;border-radius:18px 18px 0 0;display:block}
+.op img.cima{object-position:center 22%}
+.op .et{display:block;font:700 1.4rem/1.15 var(--serif);color:var(--malva);padding:10px 6px 2px}
+.op .st{display:block;font-weight:600;font-size:.95rem;color:#7b6470;padding:0 6px 12px}
+.op .st::after{content:"👆 Toca para elegir"}
+.op[aria-pressed=true]{border-color:var(--verde);background:#e8f8ee}
+.op[aria-pressed=true] .st{color:var(--verde2)}
+.op[aria-pressed=true] .st::after{content:"✔ ELEGIDO (toca para quitar)"}
+.op[aria-pressed=true]::after{content:"✓";position:absolute;top:-14px;right:-10px;width:44px;height:44px;border-radius:50%;background:var(--verde);color:#fff;display:grid;place-items:center;font-size:1.7rem;font-weight:700;box-shadow:0 4px 10px rgba(0,0,0,.25)}
+.op.promo{grid-column:1/-1;justify-self:center;width:100%;max-width:520px}
+.op.promo .et::before{content:"🎁 OFERTA · ";font:700 1rem var(--sans);color:var(--verde2)}
+.lista{max-width:720px;margin:0 auto;background:#fff;border:3px solid var(--oro);border-radius:26px;padding:26px 20px;box-shadow:0 18px 44px rgba(122,59,87,.14)}
+.lista h3{font-size:2.1rem;color:var(--malva);margin-bottom:8px;text-align:center}
+.vacio{text-align:center;color:#7b6470;font-size:1.1rem;margin:10px 0 14px}.vacio[hidden]{display:none}
+.lista label{display:block;font-weight:700;margin:14px 0 6px;font-size:1.05rem}
+.previa{margin:20px 0 8px;font-weight:700;color:var(--malva);text-align:center}
+.burbuja{background:#d9fdd3;border-radius:6px 18px 18px 18px;padding:14px 16px;white-space:pre-line;color:#1f2d24;box-shadow:0 2px 6px rgba(0,0,0,.12);line-height:1.45;margin-bottom:20px}
+.lista .btn.enorme{margin-top:4px}
+.nota{text-align:center;color:#6d5460;margin-top:12px}
+
 /* Galería con deslizador */
 #galeria{padding-bottom:0}
 .banda{padding:48px 0 40px}
@@ -221,6 +253,23 @@ footer small{display:block;margin-top:30px;color:#8a6a78}
  #bandeja{left:12px;bottom:16px;padding:12px 18px}
  footer{padding-bottom:110px}footer .tel{font-size:1.35rem}
 }
+
+/* Fondo rosa (entre fuerte y suave) */
+.btn[hidden]{display:none}
+body{background:var(--fondo)}
+nav{background:rgba(244,114,182,.95);border-bottom:1px solid rgba(255,255,255,.55)}
+nav ul a:hover{color:#fff}
+.hero{background:linear-gradient(135deg,var(--fondo2),var(--fondo) 55%,#f07ab8)}
+.hero::after{background:linear-gradient(90deg,rgba(244,114,182,.6),rgba(244,114,182,.2))}
+.hero p.lead{color:#3a1230}
+#servicios{background:linear-gradient(180deg,var(--fondo),var(--fondo2) 55%,var(--fondo3))}
+#galeria{background:var(--fondo)}
+.titulo h2{color:#3a1230}.titulo p{color:#4a1f3a}
+.banda.mujeres,.banda.ninas{background:var(--fondo3)}
+.banda.gala,.banda.catalogo{background:var(--fondo2)}
+.banda.hombres{background:#f581bd}
+.cta-gal{background:var(--fondo)}
+footer{background:linear-gradient(135deg,var(--fondo2),var(--fondo3));border-top:3px solid rgba(255,255,255,.7)}
 </style>
 </head>
 <body>
@@ -228,10 +277,10 @@ footer small{display:block;margin-top:30px;color:#8a6a78}
 <nav>
   <div class="wrap">
     <a class="logo" href="#inicio">Salón Norma</a>
-    <a class="navpedido" href="#servicios">📲 Hacer pedido</a>
+    <a class="navpedido" href="#servicios">📲 Hacer consulta</a>
     <ul>
-      <li><a href="#promocion">Promoción</a></li>
-      <li><a href="#servicios">Hacer pedido</a></li>
+      
+      <li><a href="#servicios">Hacer consulta</a></li>
       <li><a href="#galeria">Galería</a></li>
       <li><a href="#contacto">Contacto</a></li>
     </ul>
@@ -242,11 +291,10 @@ footer small{display:block;margin-top:30px;color:#8a6a78}
   <div class="hero-bg" aria-hidden="true"></div>
   <div class="wrap">
     <div>
-      <h1>Salón de Belleza Norma</h1>
+      <h1>Salón de Belleza y Peluquería Unisex Norma</h1>
       <p class="lead">Estilo clásico con ideas de hoy, para ella y para él.</p>
-      <div class="iconos"><span>✂️ Cortes</span><span>🎨 Color</span><span>💇‍♀️ Peinados</span><span>💄 Maquillaje</span><span>💅 Uñas</span></div>
       <div class="acts">
-        <a class="btn" href="#servicios">📲 Hacer mi pedido</a>
+        <a class="btn" href="#servicios">📲 Hacer mi consulta</a>
         <a class="btn suave" data-wa="Hola, quisiera pedir un turno." target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><use href="#wa"/></svg>Hablar por WhatsApp</a>
       </div>
     </div>
@@ -254,87 +302,40 @@ footer small{display:block;margin-top:30px;color:#8a6a78}
   </div>
 </header>
 
-<section id="promocion">
-  <div class="wrap">
-    <div class="promo" id="promoCard">
-      <span class="cinta">🎁 OFERTA</span>
-      <h2>Paquete 3 en 1</h2>
-      <div class="tres"><span>🚿<b>Lavado</b></span><i>+</i><span>✂️<b>Cortado</b></span><i>+</i><span>💇‍♀️<b>Cepillado</b></span></div>
-      <p>Precio especial: Norma te lo dice por WhatsApp.</p>
-      <button type="button" class="btn grande" id="promoBtn" aria-pressed="false"><span class="t">➕ Agregar a mi pedido</span></button>
-      <div id="promoEstado" hidden>
-        <p>✔ Ya está en tu pedido</p>
-        <a class="btn malva" href="#servicios" id="promoIr">Ir a enviar ➜</a>
-      </div>
-    </div>
-  </div>
-</section>
-
 <section id="servicios">
   <div class="wrap">
-    <div class="titulo"><h2>Haz tu pedido</h2><p>Sin escribir: solo toca las imágenes.</p></div>
+    <div class="titulo"><h2>Haz tu consulta</h2><p>Sin escribir: toca las fotos y mándale tu lista a Norma por WhatsApp.</p></div>
 
-    <div class="guia">
-      <h3>Así de fácil</h3>
-      <div class="pasos3">
-        <div class="paso3"><div class="ic">👆</div><b>1. Toca lo que quieres</b></div>
-        <div class="flech">➜</div>
-        <div class="paso3"><div class="ic">👩👨</div><b>2. Para quién</b></div>
-        <div class="flech">➜</div>
-        <div class="paso3"><div class="ic">📲</div><b>3. Envía a Norma</b></div>
-      </div>
-      <div class="acc">
-        <button type="button" class="voz" data-voz="guia">🔊 Escuchar cómo pedir</button>
-        <a class="btn suave" data-wa="Hola Norma, te voy a mandar un audio con lo que necesito." target="_blank" rel="noopener">🎤 Prefiero mandar un audio</a>
-      </div>
+    <div class="como">
+      <h3>¿Cómo se usa? Es muy fácil</h3>
+      <ol class="pasos">
+        <li><span class="num">1</span><div><b>Toca la foto</b> de lo que quieres. Se pone <b class="vd">verde con ✓</b>. Puedes tocar varias.</div></li>
+        <li><span class="num">2</span><div>Más abajo, en <b>“Tu lista”</b>, se escribe sola lo que elegiste. No tienes que escribir nada.</div></li>
+        <li><span class="num">3</span><div>Toca el <b>botón verde grande</b> que dice “Enviar a Norma por WhatsApp”.</div></li>
+        <li><span class="num">4</span><div>Se abre WhatsApp con tu mensaje ya escrito. Toca la <b>flecha verde ➤</b> para mandarlo. ¡Listo! Norma te responde con precios y horarios.</div></li>
+      </ol>
     </div>
 
-    <div class="eventos">
-      <h3>Peinados para eventos especiales</h3>
-      <ul><li>💃 Noche de gala (unisex)</li><li>👑 Quinceaños</li><li>🎓 Promociones</li><li>🎓 Graduaciones</li><li>💍 Matrimonios</li><li>🕊️ Bautizos</li></ul>
+    <div class="ops">
+      <button type="button" class="op promo" data-s="Paquete 3 en 1 (lavado + corte + cepillado)" data-ic="🎁" aria-pressed="false"><img src="imgsalonbelleza/promo.jpg" alt="Paquete 3 en 1: lavado de cabello, corte y cepillado" width="621" height="397"><span class="et">Paquete 3 en 1</span><span class="st"></span></button>
+      <button type="button" class="op" data-s="Corte de mujer" data-ic="✂️" aria-pressed="false"><img src="imgsalonbelleza/corte-mujer.jpg" alt="Corte de cabello para mujer" width="627" height="469" loading="lazy"><span class="et">Corte de mujer</span><span class="st"></span></button>
+      <button type="button" class="op" data-s="Corte de hombre" data-ic="💈" aria-pressed="false"><img src="imgsalonbelleza/corte-hombre.jpg" alt="Corte de cabello para hombre" width="318" height="275" loading="lazy"><span class="et">Corte de hombre</span><span class="st"></span></button>
+      <button type="button" class="op" data-s="Tintes (color de cabello)" data-ic="🎨" aria-pressed="false"><img class="cima" src="imgsalonbelleza/tintes-pelo.jpg" alt="Tinte de cabello" width="510" height="500" loading="lazy"><span class="et">Tintes</span><span class="st"></span></button>
+      <button type="button" class="op" data-s="Peinados" data-ic="💇‍♀️" aria-pressed="false"><img src="imgsalonbelleza/peinados.jpg" alt="Peinados" width="379" height="278" loading="lazy"><span class="et">Peinados</span><span class="st"></span></button>
     </div>
 
-    <div class="asist" id="asist">
-      <div class="prog" id="prog">
-        <button type="button" data-g="1"><i>✂️</i>1 Elegir</button><button type="button" data-g="2"><i>👩</i>2 Para quién</button><button type="button" data-g="3"><i>📲</i>3 Enviar</button>
-      </div>
-
-      <div class="paso" data-p="1">
-        <h3>¿Qué quieres hacerte?</h3>
-        <p class="ins">Toca las imágenes. Se ponen <b style="color:var(--verde2)">verdes ✓</b>. Puedes tocar varias.</p>
-        <div class="tools"><button type="button" class="voz" data-voz="p1">🔊 Escuchar</button></div>
-        <div id="grupos"></div>
-        <div class="otrobox" id="otrobox" hidden>
-          <label for="otro">✏️ Escribe aquí lo que necesitas:</label>
-          <textarea id="otro" rows="3" placeholder="Ejemplo: corte para niño con diseño..."></textarea>
-        </div>
-        <div class="pie"><span id="cuenta">Aún no elegiste nada</span><button type="button" class="btn sig malva" id="sig1" disabled>Siguiente ➜</button></div>
-      </div>
-
-      <div class="paso" data-p="2" hidden>
-        <h3>¿Para quién y cuándo?</h3>
-        <p class="ins">Toca una imagen en cada fila. Si no quieres, toca <b>Siguiente</b>.</p>
-        <div class="tools"><button type="button" class="voz" data-voz="p2">🔊 Escuchar</button></div>
-        <p class="q"><span>👪</span>¿Para quién es?</p>
-        <div class="tiles" data-k="quien"></div>
-        <p class="q"><span>🗓️</span>¿Cuándo lo quieres?</p>
-        <div class="tiles" data-k="cuando"></div>
-        <p class="q"><span>😊</span><label for="nombre">Tu nombre (si quieres)</label></p>
-        <input id="nombre" type="text" autocomplete="given-name" placeholder="Escribe tu nombre">
-        <div class="pie"><button type="button" class="btn suave" data-g="1">⬅ Atrás</button><button type="button" class="btn sig malva" data-g="3">Siguiente ➜</button></div>
-      </div>
-
-      <div class="paso" data-p="3" hidden>
-        <h3>Tu pedido</h3>
-        <p class="ins">Mira que esté bien. Si algo no quieres, toca la ✕.</p>
-        <div class="tools"><button type="button" class="voz" data-voz="p3">🔊 Escuchar mi pedido</button></div>
-        <ul id="resumen" class="resumen"></ul>
-        <p id="datos" class="datos"></p>
-        <p class="ins" style="margin:6px 0 0;text-align:center">Se abre WhatsApp con tu pedido escrito. Toca la <b>flecha verde ➤</b> para mandarlo.</p>
-        <div class="acc2"><button type="button" class="btn suave" data-g="1">➕ Agregar más</button><a class="btn suave" data-wa="Hola Norma, te voy a mandar un audio con lo que necesito." target="_blank" rel="noopener">🎤 Mandar audio</a></div>
-        <div class="pie"><a class="btn enorme" id="enviar" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" style="width:30px;height:30px"><use href="#wa"/></svg>ENVIAR POR WHATSAPP</a></div>
-      </div>
-      </div>
+    <div class="lista" id="lista">
+      <h3>📝 Tu lista</h3>
+      <p class="vacio" id="vacio">Todavía no elegiste nada. Toca una foto de arriba ☝️</p>
+      <ul id="resumen" class="resumen"></ul>
+      <label for="nombre">😊 Tu nombre (si quieres):</label>
+      <input id="nombre" type="text" autocomplete="given-name" placeholder="Escribe tu nombre">
+      <label for="otro">✏️ ¿Algo más? Escríbelo aquí (si quieres):</label>
+      <textarea id="otro" rows="2" placeholder="Ejemplo: quiero también para mi hija..."></textarea>
+      <p class="previa">Así le llegará tu mensaje a Norma:</p>
+      <div class="burbuja" id="burbuja"></div>
+      <a class="btn enorme" id="enviar" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" style="width:30px;height:30px"><use href="#wa"/></svg>ENVIAR A NORMA POR WHATSAPP</a>
+      <p class="nota">Después toca la <b>flecha verde ➤</b> dentro de WhatsApp para mandarlo.</p>
     </div>
   </div>
 </section>
@@ -343,12 +344,12 @@ footer small{display:block;margin-top:30px;color:#8a6a78}
   <div class="wrap titulo"><h2>Nuestro trabajo</h2><p>Desliza con el dedo hacia el lado. Toca una foto para verla grande.</p></div>
   <div class="banda mujeres"><div class="wrap"><h3><span>👩</span> Estilos para ellas</h3></div><p class="desliza"><span class="mano">👉</span> Desliza para ver más fotos</p><div class="pista"><button class="flecha izq" type="button" aria-label="Fotos anteriores" hidden>‹</button><div class="rail"><button type="button"><img loading="lazy" src="https://raw.githubusercontent.com/jovenlaburo67-collab/salondebelleza/main/imgsalonbelleza/imagen8.jpg" alt="Corte y color para mujer" width="520" height="650"></button><button type="button"><img loading="lazy" src="https://raw.githubusercontent.com/jovenlaburo67-collab/salondebelleza/main/imgsalonbelleza/imagen11.jpg" alt="Mechas y ondas para mujer" width="520" height="650"></button><button type="button"><img loading="lazy" src="https://raw.githubusercontent.com/jovenlaburo67-collab/salondebelleza/main/imgsalonbelleza/imagen12.jpg" alt="Cabello rojo y largo" width="520" height="650"></button><button type="button"><img loading="lazy" src="https://raw.githubusercontent.com/jovenlaburo67-collab/salondebelleza/main/imgsalonbelleza/imagen13.jpg" alt="Cabello oscuro con brillo" width="520" height="650"></button><button type="button"><img loading="lazy" src="https://raw.githubusercontent.com/jovenlaburo67-collab/salondebelleza/main/imgsalonbelleza/imagen14.jpg" alt="Rubios con mechas y movimiento" width="520" height="650"></button><button type="button"><img loading="lazy" src="https://raw.githubusercontent.com/jovenlaburo67-collab/salondebelleza/main/imgsalonbelleza/imagen15.jpg" alt="Rojo intenso" width="520" height="650"></button><button type="button"><img loading="lazy" src="https://raw.githubusercontent.com/jovenlaburo67-collab/salondebelleza/main/imgsalonbelleza/imagen16.jpg" alt="Mechas y puntas de color" width="520" height="650"></button></div><button class="flecha der" type="button" aria-label="Más fotos">›</button></div></div><div class="banda gala"><div class="wrap"><h3><span>👑</span> Peinados de gala y quinceaños</h3></div><p class="desliza"><span class="mano">👉</span> Desliza para ver más fotos</p><div class="pista"><button class="flecha izq" type="button" aria-label="Fotos anteriores" hidden>‹</button><div class="rail"><button type="button"><img loading="lazy" src="https://raw.githubusercontent.com/jovenlaburo67-collab/salondebelleza/main/imgsalonbelleza/imagen17.jpg" alt="Recogidos con rizos" width="520" height="650"></button><button type="button"><img loading="lazy" src="https://raw.githubusercontent.com/jovenlaburo67-collab/salondebelleza/main/imgsalonbelleza/imagen18.jpg" alt="Peinado para fiesta de gala" width="520" height="650"></button><button type="button"><img loading="lazy" src="https://raw.githubusercontent.com/jovenlaburo67-collab/salondebelleza/main/imgsalonbelleza/imagen19.jpg" alt="Peinados para quinceañera" width="520" height="650"></button></div><button class="flecha der" type="button" aria-label="Más fotos">›</button></div></div><div class="banda hombres"><div class="wrap"><h3><span>👨</span> Estilos para ellos</h3></div><p class="desliza"><span class="mano">👉</span> Desliza para ver más fotos</p><div class="pista"><button class="flecha izq" type="button" aria-label="Fotos anteriores" hidden>‹</button><div class="rail"><button type="button"><img loading="lazy" src="https://raw.githubusercontent.com/jovenlaburo67-collab/salondebelleza/main/imgsalonbelleza/imagen1.jpg" alt="Corte clásico para hombre" width="520" height="650"></button><button type="button"><img loading="lazy" src="https://raw.githubusercontent.com/jovenlaburo67-collab/salondebelleza/main/imgsalonbelleza/imagen2.jpg" alt="Estilo con canas" width="520" height="650"></button><button type="button"><img loading="lazy" src="https://raw.githubusercontent.com/jovenlaburo67-collab/salondebelleza/main/imgsalonbelleza/imagen3.jpg" alt="Corte moderno para hombre" width="520" height="650"></button><button type="button"><img loading="lazy" src="https://raw.githubusercontent.com/jovenlaburo67-collab/salondebelleza/main/imgsalonbelleza/imagen22.jpg" alt="Cortes con mechas para jóvenes" width="520" height="650"></button><button type="button"><img loading="lazy" src="https://raw.githubusercontent.com/jovenlaburo67-collab/salondebelleza/main/imgsalonbelleza/imagen23.jpg" alt="Cortes y peinados para hombre" width="520" height="650"></button><button type="button"><img loading="lazy" src="https://raw.githubusercontent.com/jovenlaburo67-collab/salondebelleza/main/imgsalonbelleza/imagen24.jpg" alt="Estilos juveniles" width="520" height="650"></button></div><button class="flecha der" type="button" aria-label="Más fotos">›</button></div></div><div class="banda ninas"><div class="wrap"><h3><span>👧</span> Peinados para niñas y ocasiones especiales</h3></div><p class="desliza"><span class="mano">👉</span> Desliza para ver más fotos</p><div class="pista"><button class="flecha izq" type="button" aria-label="Fotos anteriores" hidden>‹</button><div class="rail"><button type="button"><img loading="lazy" src="https://raw.githubusercontent.com/jovenlaburo67-collab/salondebelleza/main/imgsalonbelleza/imagen4.jpg" alt="Peinado infantil" width="520" height="650"></button><button type="button"><img loading="lazy" src="https://raw.githubusercontent.com/jovenlaburo67-collab/salondebelleza/main/imgsalonbelleza/imagen5.jpg" alt="Recogidos para niña" width="520" height="650"></button><button type="button"><img loading="lazy" src="https://raw.githubusercontent.com/jovenlaburo67-collab/salondebelleza/main/imgsalonbelleza/imagen6.jpg" alt="Rizos y trenzas para niñas" width="520" height="650"></button><button type="button"><img loading="lazy" src="https://raw.githubusercontent.com/jovenlaburo67-collab/salondebelleza/main/imgsalonbelleza/imagen7.jpg" alt="Peinados de gala para niñas" width="520" height="650"></button><button type="button"><img loading="lazy" src="https://raw.githubusercontent.com/jovenlaburo67-collab/salondebelleza/main/imgsalonbelleza/imagen9.jpg" alt="Moños y recogidos" width="520" height="650"></button><button type="button"><img loading="lazy" src="https://raw.githubusercontent.com/jovenlaburo67-collab/salondebelleza/main/imgsalonbelleza/imagen10.jpg" alt="Peinados para bautizo y fiestas" width="520" height="650"></button></div><button class="flecha der" type="button" aria-label="Más fotos">›</button></div></div><div class="banda catalogo"><div class="wrap"><h3><span>📖</span> Catálogo: elige tu corte</h3></div><p class="desliza"><span class="mano">👉</span> Desliza para ver más fotos</p><div class="pista"><button class="flecha izq" type="button" aria-label="Fotos anteriores" hidden>‹</button><div class="rail"><button type="button"><img loading="lazy" src="https://raw.githubusercontent.com/jovenlaburo67-collab/salondebelleza/main/imgsalonbelleza/catalogo-hombres-1.jpg" alt="Catálogo de cortes para hombre" width="1100" height="770"></button><button type="button"><img loading="lazy" src="https://raw.githubusercontent.com/jovenlaburo67-collab/salondebelleza/main/imgsalonbelleza/catalogo-hombres-2.jpg" alt="Catálogo de cortes y barba" width="720" height="1046"></button><button type="button"><img loading="lazy" src="https://raw.githubusercontent.com/jovenlaburo67-collab/salondebelleza/main/imgsalonbelleza/catalogo-hombres-3.jpg" alt="Más cortes para hombre" width="720" height="1003"></button><button type="button"><img loading="lazy" src="https://raw.githubusercontent.com/jovenlaburo67-collab/salondebelleza/main/imgsalonbelleza/catalogo-mujeres.jpg" alt="Catálogo de peinados para mujer, 12 modelos" width="1500" height="638"></button></div><button class="flecha der" type="button" aria-label="Más fotos">›</button></div></div>
   <div class="cta-gal">
-    <a class="btn" href="#servicios">📲 Hacer mi pedido</a>
+    <a class="btn" href="#servicios">📲 Hacer mi consulta</a>
   </div>
 </section>
 
 <footer id="contacto">
-  <h2>Salón de Belleza Norma</h2>
+  <h2>Salón de Belleza y Peluquería Unisex Norma</h2>
   <p>Tu mejor versión empieza aquí.</p>
   <p class="tel">📞 Cel. 746-26420</p>
   <a class="btn" data-wa="Hola, quisiera consultar disponibilidad." target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><use href="#wa"/></svg>Escríbenos por WhatsApp</a>
@@ -359,7 +360,7 @@ footer small{display:block;margin-top:30px;color:#8a6a78}
 
 <dialog id="zoom"><img alt=""><button class="x" type="button" aria-label="Cerrar">✕</button><button class="nav2 prev" type="button" aria-label="Foto anterior">‹</button><button class="nav2 next" type="button" aria-label="Foto siguiente">›</button></dialog>
 <div id="toast" role="status"></div>
-<a href="#servicios" id="bandeja" hidden>🧾 Mi pedido: <b id="nb">0</b></a>
+<a href="#lista" id="bandeja" hidden>🧾 Mi lista: <b id="nb">0</b></a>
 
 <svg width="0" height="0" style="position:absolute"><symbol id="wa" viewBox="0 0 24 24"><path d="M12.04 2a9.9 9.9 0 0 0-8.5 14.9L2 22l5.27-1.38A9.9 9.9 0 1 0 12.04 2zm0 1.8a8.1 8.1 0 1 1-4.2 15.04l-.3-.18-3.13.82.84-3.05-.2-.31A8.1 8.1 0 0 1 12.04 3.8zM8.6 7.4c-.2 0-.5.07-.75.35-.26.28-1 1-1 2.45s1.03 2.84 1.17 3.04c.15.2 2.02 3.22 5 4.38 2.47.97 2.97.78 3.5.73.54-.05 1.73-.7 1.97-1.39.24-.68.24-1.27.17-1.39-.07-.12-.27-.2-.57-.34-.3-.15-1.73-.86-2-.95-.27-.1-.47-.15-.66.15-.2.3-.76.95-.93 1.15-.17.2-.34.22-.64.07a7.9 7.9 0 0 1-2.34-1.44 8.7 8.7 0 0 1-1.62-2.02c-.17-.3 0-.46.13-.6.13-.14.3-.35.44-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.66-1.6-.91-2.18-.24-.57-.48-.5-.66-.5z"/></symbol></svg>
 
@@ -370,114 +371,45 @@ const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
 $$("[data-wa]").forEach(a=>a.href=wa(a.dataset.wa));
 $(".hero-bg").style.backgroundImage='url("'+$("#heroimg").src+'")';
 
-/* ---------- Servicios: [nombre para el mensaje, icono, texto corto en la imagen] ---------- */
-const PROMO="Paquete 3 en 1 (lavado + cortado + cepillado)";
-const GRUPOS=[
- ["🎁","Promoción",[[PROMO,"🎁","Paquete 3 en 1"]]],
- ["✂️","Cabello",[["Corte normal","✂️"],["Cortes de moda","💇‍♀️"],["Tintes","🎨"],["Tinte californiano","🌅"],["Mechas","🌟"],["Mechones","✨"],["Rayitos","🖌️"],["Alisados progresivos","💫"],["Planchado y cepillado","🔥"],["Permanentes y ondulaciones","🌀","Ondulaciones"]]],
- ["🎀","Peinados y eventos",[["Peinados y moños","🎀"],["Peinado para noche de gala","🌙","Noche de gala"],["Peinado de quinceaños","👑","Quinceaños"],["Peinado de novia o matrimonio","💍","Novia / matrimonio"],["Peinado para graduación o promoción","🎓","Graduación / promoción"],["Peinado para bautizo","🕊️","Bautizo"]]],
- ["💄","Rostro y mirada",[["Maquillaje profesional","💄","Maquillaje"],["Pestañas 1x1","👁️"],["Pestañas cortina","🦋"],["Pintado de ceja con henna","🖊️","Ceja con henna"],["Limpieza de cutis rejuvenecedor","🧖‍♀️","Limpieza de cutis"]]],
- ["💅","Manos y pies",[["Manicure","💅"],["Pedicure","🦶"],["Diseños de uñas","🌸"]]],
- ["💧","Tratamientos y más",[["Tratamiento capilar con ampolla","💧","Tratamiento con ampolla"],["Tratamiento de 1 mes para hacer renacer el cabello","🌱","Renacer el cabello"],["Extensión de cabello","👩‍🦰"],["Cortinas","🪞"],["Depilación corporal","🪒","Depilación"]]]
-];
-const QUIEN=[["Para ella","👩","Ella"],["Para él","👨","Él"],["Para una niña","👧","Niña"],["Para un niño","👦","Niño"]];
-const CUANDO=[["Hoy","☀️","Hoy"],["Mañana","🌙","Mañana"],["Esta semana","📅","Esta semana"],["Es para un evento","🎉","Un evento"]];
-const ICONO={};GRUPOS.forEach(g=>g[2].forEach(i=>ICONO[i[0]]=i[1]));
-const sel=new Set();let otroOn=false,quien="",cuando="";
-const otro=$("#otro"),nombre=$("#nombre");
-
-function tile(icono,texto,cls){const b=document.createElement("button");b.type="button";b.className="tile "+(cls||"");b.innerHTML='<span class="ic">'+icono+'</span><span></span>';b.lastChild.textContent=texto;b.setAttribute("aria-pressed","false");return b}
-const cont=$("#grupos");
-GRUPOS.forEach(([ic,t,items])=>{
-  const d=document.createElement("div");d.className="gr";d.innerHTML="<h4><span>"+ic+"</span>"+t+"</h4>";
-  const c=document.createElement("div");c.className="tiles";
-  items.forEach(([n,i,corto])=>{const b=tile(i,corto||n);b.dataset.s=n;b.onclick=()=>{sel.has(n)?sel.delete(n):sel.add(n);sync()};c.appendChild(b)});
-  d.appendChild(c);cont.appendChild(d);
+/* ---------- Consulta con fotos ---------- */
+const sel=new Set(), ICONO={};
+const otro=$("#otro"), nombre=$("#nombre");
+$$(".op").forEach(b=>{
+  ICONO[b.dataset.s]=b.dataset.ic;
+  b.onclick=()=>{
+    const n=b.dataset.s;
+    if(sel.has(n)){sel.delete(n);toast("Quitaste: "+b.querySelector(".et").textContent)}
+    else{sel.add(n);toast("✔ Agregado a tu lista. Mírala abajo ⬇")}
+    sync();
+  };
 });
-const ob=tile("✏️","Otro: lo escribo yo","especial");ob.onclick=()=>{otroOn=!otroOn;$("#otrobox").hidden=!otroOn;if(otroOn)otro.focus();sync()};
-const gl=document.createElement("div");gl.className="gr";gl.innerHTML="<h4><span>❓</span>¿No está el tuyo?</h4>";const gc=document.createElement("div");gc.className="tiles";gc.appendChild(ob);gl.appendChild(gc);cont.appendChild(gl);
-
-function opciones(k,arr){const w=$('.tiles[data-k="'+k+'"]');arr.forEach(([v,i,c])=>{const b=tile(i,c,"grande");b.dataset.v=v;b.onclick=()=>{const cur=k=="quien"?quien:cuando;const nv=cur===v?"":v;if(k=="quien")quien=nv;else cuando=nv;$$('.tiles[data-k="'+k+'"] .tile').forEach(x=>x.setAttribute("aria-pressed",x.dataset.v===nv))};w.appendChild(b)})}
-opciones("quien",QUIEN);opciones("cuando",CUANDO);
-
-const otroTxt=()=>otroOn&&otro.value.trim()?otro.value.trim():"";
+const otroTxt=()=>otro.value.trim();
 const lista=()=>{const l=[...sel];if(otroTxt())l.push("Otro: "+otroTxt());return l};
-function sync(){
-  $$(".tile[data-s]").forEach(b=>b.setAttribute("aria-pressed",sel.has(b.dataset.s)));
-  ob.setAttribute("aria-pressed",otroOn);
-  const n=lista().length;
-  $("#cuenta").textContent=n?("✔ Elegiste "+n):"Aún no elegiste nada";
-  $("#sig1").disabled=!n;
-  $("#nb").textContent=n;$("#bandeja").hidden=!n;
-  const on=sel.has(PROMO);
-  $("#promoBtn").setAttribute("aria-pressed",on);
-  $("#promoBtn .t").textContent=on?"✔ Incluido en tu pedido (tocar para quitar)":"➕ Agregar a mi pedido";
-  $("#promoCard").classList.toggle("on",on);$("#promoEstado").hidden=!on;
-}
-otro.addEventListener("input",sync);
-
-/* ---------- Mensaje para WhatsApp ---------- */
 function msg(){
-  const l=[];
-  if(sel.has(PROMO))l.push("⭐ PROMOCIÓN: "+PROMO);
-  [...sel].filter(x=>x!==PROMO).forEach(x=>l.push("• "+x));
-  if(otroTxt())l.push("• Otro: "+otroTxt());
-  let t="Hola Norma 👋, quisiera cotizar:\n"+l.join("\n");
-  if(quien)t+="\n\n"+quien;
-  if(cuando)t+="\nCuándo: "+cuando;
-  if(nombre.value.trim())t+="\nMi nombre: "+nombre.value.trim();
+  const l=lista();
+  let t="Hola Norma 👋, quisiera consultar por:\n"+l.map(x=>"• "+x).join("\n");
+  if(nombre.value.trim())t+="\n\nMi nombre: "+nombre.value.trim();
   return t+"\n\n¿Me puede indicar los precios y horarios disponibles? Gracias."
 }
-function fila(icono,texto,quitar){const li=document.createElement("li");li.innerHTML='<span class="ic"></span><span class="n"></span><button type="button" aria-label="Quitar">✕</button>';li.children[0].textContent=icono;li.children[1].textContent=texto;li.lastChild.onclick=()=>{quitar();sync();resumen()};return li}
-function resumen(){
-  const ul=$("#resumen");ul.innerHTML="";
-  [...sel].forEach(s=>ul.appendChild(fila(ICONO[s]||"💇",s,()=>sel.delete(s))));
+function fila(icono,texto,quitar){
+  const li=document.createElement("li");
+  li.innerHTML='<span class="ic"></span><span class="n"></span><button type="button" aria-label="Quitar">✕</button>';
+  li.children[0].textContent=icono;li.children[1].textContent=texto;
+  li.lastChild.onclick=()=>{quitar();sync()};return li
+}
+function sync(){
+  $$(".op").forEach(b=>b.setAttribute("aria-pressed",sel.has(b.dataset.s)));
+  const l=lista(),n=l.length,ul=$("#resumen");
+  ul.innerHTML="";
+  [...sel].forEach(x=>ul.appendChild(fila(ICONO[x]||"💇",x,()=>sel.delete(x))));
   if(otroTxt())ul.appendChild(fila("✏️","Otro: "+otroTxt(),()=>{otro.value=""}));
-  const n=lista().length;
-  $("#datos").textContent=[quien,cuando&&("Cuándo: "+cuando),nombre.value.trim()&&("Nombre: "+nombre.value.trim())].filter(Boolean).join("\n");
-  const e=$("#enviar");e.href=n?wa(msg()):"#servicios";e.style.opacity=n?1:.4;e.style.pointerEvents=n?"auto":"none";
+  $("#vacio").hidden=n>0;
+  $("#burbuja").textContent=n?msg():"(Aquí aparecerá tu mensaje cuando elijas algo)";
+  const e=$("#enviar");e.href=n?wa(msg()):"#lista";e.style.opacity=n?1:.4;e.style.pointerEvents=n?"auto":"none";
+  $("#nb").textContent=n;$("#bandeja").hidden=!n;
 }
-function go(p){
-  if(p>1&&!lista().length)p=1;
-  $$(".paso").forEach(x=>x.hidden=x.dataset.p!=p);
-  $$("#prog button").forEach(b=>b.classList.toggle("on",b.dataset.g==p));
-  if(p==3)resumen();
-  parar();
-}
-const irAsist=()=>$("#asist").scrollIntoView({behavior:"smooth",block:"start"});
-$$("[data-g]").forEach(b=>b.onclick=()=>{go(+b.dataset.g);irAsist()});
-$("#sig1").onclick=()=>{go(2);irAsist()};
+otro.addEventListener("input",sync);nombre.addEventListener("input",sync);
 const toast=m=>{const t=$("#toast");t.textContent=m;t.classList.add("on");clearTimeout(toast.t);toast.t=setTimeout(()=>t.classList.remove("on"),2400)};
-
-/* ---------- Promoción: queda dentro del pedido ---------- */
-$("#promoBtn").onclick=()=>{
-  if(sel.has(PROMO)){sel.delete(PROMO);toast("Quitaste el Paquete 3 en 1")}else{sel.add(PROMO);toast("✔ Paquete 3 en 1 agregado a tu pedido")}
-  sync();
-};
-$("#promoIr").onclick=e=>{e.preventDefault();go(3);irAsist()};
-
-/* ---------- Voz (para quien no lee) ---------- */
-const TTS="speechSynthesis" in window;
-let vozBtn=null;
-function parar(){if(TTS)speechSynthesis.cancel();if(vozBtn){vozBtn.textContent=vozBtn.dataset.t;vozBtn=null}}
-function decir(txt,btn){
-  if(!TTS)return;
-  if(vozBtn===btn){parar();return}
-  parar();
-  const u=new SpeechSynthesisUtterance(txt);u.lang="es-ES";u.rate=.9;
-  const v=speechSynthesis.getVoices().find(v=>/^es/i.test(v.lang));if(v)u.voice=v;
-  btn.dataset.t=btn.dataset.t||btn.textContent;vozBtn=btn;btn.textContent="⏹ Parar";
-  u.onend=u.onerror=()=>{if(vozBtn===btn){btn.textContent=btn.dataset.t;vozBtn=null}};
-  speechSynthesis.speak(u);
-}
-const VOZ={
- guia:()=>"Para hacer tu pedido es muy fácil. Primero, toca las imágenes de lo que quieres. Se ponen verdes. Segundo, toca para quién es y cuándo lo quieres. Tercero, toca el botón verde grande para enviar tu pedido a Norma por WhatsApp.",
- p1:()=>"Toca las imágenes de lo que quieres hacerte. Se ponen verdes. Puedes tocar varias. Cuando termines, toca el botón Siguiente, abajo.",
- p2:()=>"Toca para quién es, y cuándo lo quieres. Si no quieres contestar, toca Siguiente.",
- p3:()=>{const n=lista();return (n.length?"Tu pedido es: "+n.join(", ")+". ":"Todavía no elegiste nada. ")+"Para enviarlo, toca el botón verde grande que dice Enviar por WhatsApp. Cuando se abra WhatsApp, toca la flecha verde para mandar el mensaje."}
-};
-if(!TTS)$$(".voz").forEach(b=>b.hidden=true);
-else{$$(".voz").forEach(b=>{b.dataset.t=b.textContent;b.onclick=()=>decir(VOZ[b.dataset.voz](),b)});speechSynthesis.getVoices()}
 
 /* ---------- Galería: deslizador horizontal + ventana ---------- */
 const z=$("#zoom"),zi=z.querySelector("img");let rail=null,idx=0;
@@ -500,8 +432,8 @@ let tx=0;z.addEventListener("touchstart",e=>tx=e.touches[0].clientX,{passive:tru
 z.addEventListener("touchend",e=>{const d=e.changedTouches[0].clientX-tx;if(Math.abs(d)>50)mover(d<0?1:-1)});
 addEventListener("keydown",e=>{if(!z.open)return;if(e.key==="ArrowRight")mover(1);if(e.key==="ArrowLeft")mover(-1)});
 
-new IntersectionObserver(e=>{$("#bandeja").classList.toggle("oculta",e[0].isIntersecting)},{threshold:.05}).observe($("#asist"));
-go(1);sync();
+new IntersectionObserver(e=>{$("#bandeja").classList.toggle("oculta",e[0].isIntersecting)},{threshold:.05}).observe($("#lista"));
+sync();
 </script>
 </body>
 </html>
